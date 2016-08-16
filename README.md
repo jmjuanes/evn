@@ -41,6 +41,19 @@ The event ID that will be executed.
 
 Arguments for the callback.
 
+## Example
+
+```javascript
+//Import dependencies
+var evn = require('evn');
+
+//Add a new event
+evn.add('say_hello', function(name){ console.log('Hello ' + name + '!!'); });
+
+//Call the event
+evn.send('say_hello', 'Susan'); // -> Hello Susan!!
+```
+
 ## License
 
 &copy; [MIT LICENSE](./LICENSE)
