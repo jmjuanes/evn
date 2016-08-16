@@ -13,7 +13,7 @@ npm install --save evn
 
 ## API
 
-### evn.add(id, scope, callback)
+### evn.add(id, callback, scope)
 
 Add a new event listener.
 
