@@ -5,7 +5,7 @@ var Evn =
   list: {},
 
   //Add event
-  add: function(id, scope, callback)
+  add: function(id, callback, scope)
   {
     //Check the event callback
     if(typeof callback !== 'function'){ return console.error('ERROR: callback must be a function...'); }
