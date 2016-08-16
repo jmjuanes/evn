@@ -29,6 +29,10 @@ The function that will be executed when the event is executed.
 
 The value of `this` where the `callback` will be executed.
 
+### evn.remove(id, callback, scope)
+
+Removes an event from the list.
+
 ### evn.send(id[, args])
 
 Emit an event.
