@@ -26,7 +26,7 @@ var Evn =
     this.list[id].push({ id: id, scope: scope, callback: callback });
   },
 
-  //Remove an event
+  //Remove an event listener
   remove: function(id, callback, scope)
   {
     //Check for undefined event id
@@ -53,6 +53,13 @@ var Evn =
 
     //Save the events
     this.list[id] = events;
+  },
+
+  //Remove all events listeners
+  removeAll: function()
+  {
+    //Clear the list
+    this.list = {};
   },
 
   //Send the events
